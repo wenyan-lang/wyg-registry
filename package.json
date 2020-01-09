@@ -3,7 +3,9 @@
   "private": true,
   "scripts": {
     "build": "ts-node ./scripts/build-registry.ts",
-    "verify": "ts-node ./scripts/verify"
+    "verify": "ts-node ./scripts/verify",
+    "lint": "eslint **/*.ts",
+    "lint:fix": "npm run lint -- --fix"
   },
   "repository": {
     "type": "git",
@@ -15,7 +17,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.ts": [
+    "**/*.ts": [
       "eslint --fix",
       "git add"
     ],
