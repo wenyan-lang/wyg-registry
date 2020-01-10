@@ -22,9 +22,9 @@ export const packages: PackageInfo[] = [
   {
     name: '简体秘术',
     repo: 'github:lymslive/wyg-packages#jiantihua',
-    description: 'Cowsay for Wenyan Lang',
+    description: 'Use simplified Chinese keywords and punctuation for Wenyan Lang',
     author: {
-      name: 'antfu',
+      name: 'lymslive',
       url: 'https://github.com/lymslive/wyg-packages',
     },
 		aliases: ['jiantihua'],
