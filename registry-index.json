@@ -1,8 +1,10 @@
 {
   "alias": {
+    "jiantihua": "简体秘术",
     "ziyue": "子曰"
   },
   "packages": {
-    "子曰": "antfu/ziyue-wy"
+    "子曰": "antfu/ziyue-wy",
+    "简体秘术": "github:lymslive/wyg-packages#jiantihua"
   }
 }
