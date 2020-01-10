@@ -22,8 +22,8 @@
       "git add"
     ],
     "registry-packages.ts": [
-      "npm run build:registry",
-      "git add registry-index.json"
+      "npm run build",
+      "git add registry-index.json README.md"
     ]
   },
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",

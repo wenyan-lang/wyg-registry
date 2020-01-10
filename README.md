@@ -19,7 +19,7 @@ Also, you can check out [`子曰<antfu/ziyue-wy>`](https://github.com/antfu/ziyu
 <!--GENERATED_DO_NOT_MODIFY-->
 <!--package_list_start-->
 
-- [子曰](https://github.com/antfu/ziyue-wy/tree/master) - Cowsay for Wenyan Lang - by [antfu](https://github.com/antfu>)
+- [子曰](https://github.com/antfu/ziyue-wy/tree/master) - Cowsay for Wenyan Lang - by [antfu](https://github.com/antfu)
 
 <!--package_list_end-->
 

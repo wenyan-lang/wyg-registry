@@ -25,7 +25,7 @@ export const packages: PackageInfo[] = [
     description: 'Cowsay for Wenyan Lang',
     author: {
       name: 'antfu',
-      url: 'https://github.com/antfu>',
+      url: 'https://github.com/antfu',
     },
     aliases: ['ziyue'],
   },
