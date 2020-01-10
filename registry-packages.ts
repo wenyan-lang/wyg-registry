@@ -20,13 +20,13 @@ import { PackageInfo } from './scripts/types'
 
 export const packages: PackageInfo[] = [
   {
-    name: '子曰',
-    repo: 'antfu/ziyue-wy',
+    name: '简体秘术',
+    repo: 'github:lymslive/wyg-packages#jiantihua',
     description: 'Cowsay for Wenyan Lang',
     author: {
       name: 'antfu',
-      url: 'https://github.com/antfu',
+      url: 'https://github.com/lymslive/wyg-packages',
     },
-    aliases: ['ziyue'],
+		aliases: ['jiantihua'],
   },
 ]
