@@ -29,4 +29,14 @@ export const packages: PackageInfo[] = [
     },
     aliases: ['ziyue'],
   },
+  {
+    name: '简体秘术',
+    repo: 'github:lymslive/wyg-packages#jiantihua',
+    description: 'Use simplified Chinese keywords and punctuation for Wenyan Lang',
+    author: {
+      name: 'lymslive',
+      url: 'https://github.com/lymslive/wyg-packages',
+    },
+    aliases: ['jiantihua'],
+  },
 ]
