@@ -17,8 +17,10 @@ jobs:
     - name: Install
       run: npm ci
 
+    - name: Lint
+      run: npm run lint
+
     - name: Verify
       run: npm run verify
 
-    - name: Lint
-      run: npm run lint
+  
