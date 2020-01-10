@@ -19,7 +19,7 @@ import { PackageInfo } from './scripts/types'
 // No version control yet
 
 export const packages: PackageInfo[] = [
-{
+  {
     name: '子曰',
     repo: 'antfu/ziyue-wy',
     description: 'Cowsay for Wenyan Lang',
@@ -37,6 +37,6 @@ export const packages: PackageInfo[] = [
       name: 'lymslive',
       url: 'https://github.com/lymslive/wyg-packages',
     },
-		aliases: ['jiantihua'],
+    aliases: ['jiantihua'],
   },
 ]
