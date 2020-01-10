@@ -1,5 +1,5 @@
 {
-  "name": "@antfu/wyg-registry",
+  "name": "@wenyanlang/wyg-registry",
   "private": true,
   "scripts": {
     "build": "ts-node ./scripts/build-registry.ts",
@@ -34,7 +34,7 @@
   "homepage": "https://github.com/antfu/wyg-registry#readme",
   "devDependencies": {
     "@antfu/eslint-config-ts": "^0.2.10",
-    "@antfu/wyg": "0.0.4",
+    "@wenyanlang/wyg": "0.0.5",
     "@types/fs-extra": "^8.0.1",
     "@types/json-stable-stringify": "^1.0.32",
     "@types/node": "^13.1.6",
