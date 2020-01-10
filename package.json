@@ -34,19 +34,19 @@
   "homepage": "https://github.com/antfu/wyg-registry#readme",
   "devDependencies": {
     "@antfu/eslint-config-ts": "^0.2.10",
-    "@antfu/wyg": "0.0.3",
+    "@antfu/wyg": "0.0.4",
     "@types/fs-extra": "^8.0.1",
     "@types/json-stable-stringify": "^1.0.32",
-    "@types/node": "^13.1.5",
+    "@types/node": "^13.1.6",
     "commander": "^4.1.0",
     "consola": "^2.11.3",
     "eslint": "^6.8.0",
     "eslint-plugin-jest": "^23.3.0",
     "fs-extra": "^8.1.0",
-    "husky": "3.1.0",
+    "husky": "4.0.5",
     "json-stable-stringify": "^1.0.1",
     "lint-staged": "9.5.0",
-    "ts-node": "^8.5.4",
+    "ts-node": "^8.6.0",
     "typescript": "^3.7.4"
   }
 }
