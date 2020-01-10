@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import stringify from 'json-stable-stringify'
-import { getRepoRoot } from '@antfu/wypm'
+import { getRepoRoot } from '@antfu/wyg'
 import { packages } from '../registry-packages'
 import { RegistryIndex, AuthorInfo } from './types'
 
