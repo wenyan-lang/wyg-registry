@@ -20,10 +20,6 @@
     "**/*.ts": [
       "eslint --fix",
       "git add"
-    ],
-    "registry-packages.ts": [
-      "npm run build",
-      "git add registry-index.json README.md"
     ]
   },
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
@@ -34,10 +30,10 @@
   "homepage": "https://github.com/antfu/wyg-registry#readme",
   "devDependencies": {
     "@antfu/eslint-config-ts": "^0.2.10",
-    "@wenyanlang/wyg": "0.0.5",
     "@types/fs-extra": "^8.0.1",
     "@types/json-stable-stringify": "^1.0.32",
     "@types/node": "^13.1.6",
+    "@wenyanlang/wyg": "0.0.5",
     "commander": "^4.1.0",
     "consola": "^2.11.3",
     "eslint": "^6.8.0",

@@ -1,9 +1,11 @@
-import fs from 'fs'
 import path from 'path'
+import fs from 'fs-extra'
 import stringify from 'json-stable-stringify'
-import { getRepoRoot } from '@wenyanlang/wyg'
+import { getRepoRoot, getRepoRawRoot } from '@wenyanlang/wyg'
 import { packages } from '../registry-packages'
 import { RegistryIndex, AuthorInfo } from './types'
+
+const distDir = path.resolve(__dirname, '..', 'dist')
 
 export function BuildIndex (writeToFile = true) {
   const index: RegistryIndex = {
@@ -17,7 +19,11 @@ export function BuildIndex (writeToFile = true) {
     if (index.alias[pkg.name])
       throw new Error(`Package name ${pkg.name} conflicted with existing aliases`)
 
-    index.packages[pkg.name] = pkg.repo
+    index.packages[pkg.name] = {
+      repo: pkg.repo,
+      entry: `${getRepoRawRoot(pkg.repo)}/序.wy`,
+      author: typeof pkg.author === 'string' ? pkg.author : pkg.author?.name,
+    }
 
     if ((pkg.aliases || []).length > 5)
       throw new Error('Up to 5 aliases is allowed for a package')
@@ -32,8 +38,10 @@ export function BuildIndex (writeToFile = true) {
     }
   }
 
+  fs.ensureDirSync(distDir)
+
   if (writeToFile)
-    fs.writeFileSync(path.resolve(__dirname, '..', 'registry-index.json'), `${stringify(index, { space: 2 })}\n`, 'utf-8')
+    fs.writeFileSync(path.join(distDir, 'index.json'), `${stringify(index, { space: 2 })}\n`, 'utf-8')
 
   return index
 }
