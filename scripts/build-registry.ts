@@ -21,6 +21,7 @@ export function BuildIndex (writeToFile = true) {
 
     index.packages[pkg.name] = {
       repo: pkg.repo,
+      description: pkg.description,
       entry: `${getRepoRawRoot(pkg.repo)}/序.wy`,
       author: typeof pkg.author === 'string' ? pkg.author : pkg.author?.name,
     }
@@ -41,7 +42,7 @@ export function BuildIndex (writeToFile = true) {
   fs.ensureDirSync(distDir)
 
   if (writeToFile)
-    fs.writeFileSync(path.join(distDir, 'index.json'), `${stringify(index, { space: 2 })}\n`, 'utf-8')
+    fs.writeFileSync(path.join(distDir, 'index.json'), `${stringify(index)}\n`, 'utf-8')
 
   return index
 }

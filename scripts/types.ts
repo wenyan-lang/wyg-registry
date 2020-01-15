@@ -2,6 +2,7 @@ export interface RegistryIndex {
   packages: Record<string, {
     repo: string
     entry: string
+    description?: string
     author?: string
   }>
   alias: Record<string, string>
