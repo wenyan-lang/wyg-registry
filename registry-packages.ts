@@ -39,4 +39,14 @@ export const packages: PackageInfo[] = [
     },
     aliases: ['jiantihua'],
   },
+  {
+    name: '刻漏',
+    repo: 'akira-cn/kelou-wy',
+    description: 'JavaScript timers for Wenyan Lang',
+    author: {
+      name: 'kelou',
+      url: 'https://github.com/akira-cn',
+    },
+    aliases: ['kelou'],
+  },
 ]
