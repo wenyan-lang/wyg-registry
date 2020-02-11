@@ -97,7 +97,7 @@ export async function BuildRedirects () {
     }
   }
 
-  const text = entries.map(([a, b]) => `${a}\t${b}\t302`).join('\n')
+  const text = entries.map(([a, b]) => `${encodeURI(a)}\t${b}\t302`).join('\n')
   fs.writeFileSync(path.join(distDir, '_redirects'), `${text}\n`, 'utf-8')
 }
 
