@@ -85,19 +85,28 @@ export function BuildReadme (writeToFile = true) {
 }
 
 export async function BuildRedirects () {
-  const entries: [string, string][] = []
+  const entries: [string, string, number][] = []
 
   for (const pkg of packages) {
-    const index = `${getRepoRawRoot(pkg.repo)}/序.wy`
+    const root = getRepoRawRoot(pkg.repo)
+    const index = `${root}/序.wy`
     for (const name of [pkg.name, ...(pkg.aliases || [])]) {
       entries.push([
         `/pkg/${name}`,
         index,
+        302,
+      ])
+      entries.push([
+        `/pkg/${name}/*`,
+        `${root}/:splat`,
+        302,
       ])
     }
   }
 
-  const text = entries.map(([a, b]) => `${encodeURI(a)}\t${b}\t302`).join('\n')
+  entries.push(['/pkg/*', '/', 404])
+
+  const text = entries.map(([a, b, c]) => `${encodeURI(a)}\t${b}\t${c}`).join('\n')
   fs.writeFileSync(path.join(distDir, '_redirects'), `${text}\n`, 'utf-8')
 }
 
