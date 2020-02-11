@@ -33,6 +33,7 @@
     "@types/fs-extra": "^8.0.1",
     "@types/json-stable-stringify": "^1.0.32",
     "@types/node": "^13.1.6",
+    "@types/markdown-it": "0.0.9",
     "@wenyanlang/wyg": "0.0.5",
     "commander": "^4.1.0",
     "consola": "^2.11.3",
@@ -45,8 +46,5 @@
     "ts-node": "^8.6.0",
     "markdown-it": "^10.0.0",
     "typescript": "^3.7.4"
-  },
-  "dependencies": {
-    "@types/markdown-it": "0.0.9"
   }
 }
