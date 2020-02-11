@@ -83,7 +83,25 @@ export function BuildReadme (writeToFile = true) {
   return readme
 }
 
+export async function BuildRedirects () {
+  const entries: [string, string][] = []
+
+  for (const pkg of packages) {
+    const index = `${getRepoRawRoot(pkg.repo)}/序.wy`
+    for (const name of [pkg.name, ...(pkg.aliases || [])]) {
+      entries.push([
+        `/pkg/${name}`,
+        index,
+      ])
+    }
+  }
+
+  const text = entries.map(([a, b]) => `${a}\t${b}\t302`).join('\n')
+  fs.writeFileSync(path.join(distDir, '_redirects'), `${text}\n`, 'utf-8')
+}
+
 if (require.main === module) {
   BuildIndex()
   BuildReadme()
+  BuildRedirects()
 }
