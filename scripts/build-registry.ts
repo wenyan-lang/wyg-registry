@@ -1,6 +1,7 @@
 import path from 'path'
 import fs from 'fs-extra'
 import stringify from 'json-stable-stringify'
+import markdownit from 'markdown-it'
 import { getRepoRoot, getRepoRawRoot } from '@wenyanlang/wyg'
 import { packages } from '../registry-packages'
 import { RegistryIndex, AuthorInfo } from './types'
@@ -100,8 +101,18 @@ export async function BuildRedirects () {
   fs.writeFileSync(path.join(distDir, '_redirects'), `${text}\n`, 'utf-8')
 }
 
+export function BuildRegistryIndex () {
+  let md = fs.readFileSync(path.resolve(__dirname, 'index-templates', 'index.md'), 'utf-8')
+  md = md.replace('<!--PACKAGES-->', BuildReadme(false))
+  let html = fs.readFileSync(path.resolve(__dirname, 'index-templates', 'index.html'), 'utf-8')
+  html = html.replace('<!--MD-->', markdownit().render(md))
+
+  fs.writeFileSync(path.join(distDir, 'index.html'), html)
+}
+
 if (require.main === module) {
   BuildIndex()
   BuildReadme()
   BuildRedirects()
+  BuildRegistryIndex()
 }
