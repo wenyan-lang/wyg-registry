@@ -94,12 +94,12 @@ export async function BuildRedirects () {
       entries.push([
         `/pkg/${name}`,
         index,
-        200,
+        302,
       ])
       entries.push([
         `/pkg/${name}/*`,
         `${root}/:splat`,
-        200,
+        302,
       ])
     }
   }
