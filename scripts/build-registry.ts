@@ -94,17 +94,17 @@ export async function BuildRedirects () {
       entries.push([
         `/pkg/${name}`,
         index,
-        302,
+        200,
       ])
       entries.push([
         `/pkg/${name}/*`,
         `${root}/:splat`,
-        302,
+        200,
       ])
     }
   }
 
-  entries.push(['/pkg/*', '/', 404])
+  entries.push(['/pkg/*', '/404', 404])
 
   const text = entries.map(([a, b, c]) => `${encodeURI(a)}\t${b}\t${c}`).join('\n')
   fs.writeFileSync(path.join(distDir, '_redirects'), `${text}\n`, 'utf-8')
@@ -117,6 +117,7 @@ export function BuildRegistryIndex () {
   html = html.replace('<!--MD-->', markdownit().render(md))
 
   fs.writeFileSync(path.join(distDir, 'index.html'), html)
+  fs.copyFileSync(path.resolve(__dirname, 'index-templates', '404.html'), path.join(distDir, '404.html'))
 }
 
 if (require.main === module) {
