@@ -60,7 +60,7 @@ export const packages: PackageInfo[] = [
     aliases: ['currying'],
   },
   {
-    name: '腳本秘術'',
+    name: '腳本秘術',
     repo: 'akira-cn/script-wy',
     description: 'Embed scripts into Wenyan Lang',
     author: {
