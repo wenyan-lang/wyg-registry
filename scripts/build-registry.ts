@@ -1,6 +1,7 @@
 import path from 'path'
 import fs from 'fs-extra'
 import stringify from 'json-stable-stringify'
+import markdownit from 'markdown-it'
 import { getRepoRoot, getRepoRawRoot } from '@wenyanlang/wyg'
 import { packages } from '../registry-packages'
 import { RegistryIndex, AuthorInfo } from './types'
@@ -83,7 +84,45 @@ export function BuildReadme (writeToFile = true) {
   return readme
 }
 
+export async function BuildRedirects () {
+  const entries: [string, string, number][] = []
+
+  for (const pkg of packages) {
+    const root = getRepoRawRoot(pkg.repo)
+    const index = `${root}/序.wy`
+    for (const name of [pkg.name, ...(pkg.aliases || [])]) {
+      entries.push([
+        `/pkg/${name}`,
+        index,
+        302,
+      ])
+      entries.push([
+        `/pkg/${name}/*`,
+        `${root}/:splat`,
+        302,
+      ])
+    }
+  }
+
+  entries.push(['/pkg/*', '/404', 404])
+
+  const text = entries.map(([a, b, c]) => `${encodeURI(a)}\t${b}\t${c}`).join('\n')
+  fs.writeFileSync(path.join(distDir, '_redirects'), `${text}\n`, 'utf-8')
+}
+
+export function BuildRegistryIndex () {
+  let md = fs.readFileSync(path.resolve(__dirname, 'index-templates', 'index.md'), 'utf-8')
+  md = md.replace('<!--PACKAGES-->', BuildReadme(false))
+  let html = fs.readFileSync(path.resolve(__dirname, 'index-templates', 'index.html'), 'utf-8')
+  html = html.replace('<!--MD-->', markdownit().render(md))
+
+  fs.writeFileSync(path.join(distDir, 'index.html'), html)
+  fs.copyFileSync(path.resolve(__dirname, 'index-templates', '404.html'), path.join(distDir, '404.html'))
+}
+
 if (require.main === module) {
   BuildIndex()
   BuildReadme()
+  BuildRedirects()
+  BuildRegistryIndex()
 }
