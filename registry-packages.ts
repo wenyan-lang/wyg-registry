@@ -69,4 +69,14 @@ export const packages: PackageInfo[] = [
     },
     aliases: ['script'],
   },
+  {
+    name: '交互秘術',
+    repo: 'GLanguage/jiaohu-wy',
+    description: 'IO for Wenyan Lang',
+    author: {
+      name: 'GLanguage',
+      url: 'https://github.com/GLanguage',
+    },
+    aliases: ['jiaohu'],
+  },
 ]
