@@ -22,6 +22,7 @@ You can also check out [`子曰<antfu/ziyue-wy>`](https://github.com/antfu/ziyue
 - [柯裡化法](https://github.com/akira-cn/currying-wy/tree/master) - Currying for Wenyan Lang - by [akira-cn](https://github.com/akira-cn)
 - [简体秘术](https://github.com/lymslive/wyg-packages/tree/jiantihua) - Use simplified Chinese keywords and punctuation for Wenyan Lang - by [lymslive](https://github.com/lymslive/wyg-packages)
 - [腳本秘術](https://github.com/akira-cn/script-wy/tree/master) - Embed multiline JavaScript into the source code of Wenyan Lang - by [akira-cn](https://github.com/akira-cn)
+- [交互秘術](https://github.com/GLanguage/jiaohu-wy) - IO for Wenyan Lang - by [GLanguage](https://github.com/GLanguage)
 
 <!--package_list_end-->
 
