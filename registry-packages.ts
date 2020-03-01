@@ -79,4 +79,14 @@ export const packages: PackageInfo[] = [
     },
     aliases: ['jiaohu'],
   },
+  {
+    name: '質問',
+    repo: 'alainsaas/prompt-wy',
+    description: 'Prompt for Wenyan Lang',
+    author: {
+      name: 'alainsaas',
+      url: 'https://github.com/alainsaas',
+    },
+    aliases: ['prompt'],
+  },
 ]
