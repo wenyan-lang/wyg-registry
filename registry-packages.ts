@@ -88,5 +88,8 @@ export const packages: PackageInfo[] = [
       url: 'https://github.com/alainsaas',
     },
     aliases: ['prompt'],
+    dependencies: {
+      腳本秘術: '*',
+    },
   },
 ]
