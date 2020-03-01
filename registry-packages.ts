@@ -22,7 +22,7 @@ export const packages: PackageInfo[] = [
   {
     name: '子曰',
     repo: 'antfu/ziyue-wy',
-    description: 'Cowsay for Wenyan Lang',
+    description: 'Cowsay for wenyan-lang',
     author: {
       name: 'antfu',
       url: 'https://github.com/antfu',
@@ -32,7 +32,7 @@ export const packages: PackageInfo[] = [
   {
     name: '简体秘术',
     repo: 'github:lymslive/wyg-packages#jiantihua',
-    description: 'Use simplified Chinese keywords and punctuation for Wenyan Lang',
+    description: 'Use simplified Chinese keywords and punctuation for wenyan-lang',
     author: {
       name: 'lymslive',
       url: 'https://github.com/lymslive/wyg-packages',
@@ -42,7 +42,7 @@ export const packages: PackageInfo[] = [
   {
     name: '刻漏',
     repo: 'akira-cn/kelou-wy',
-    description: 'JavaScript timers for Wenyan Lang',
+    description: 'JavaScript timers for wenyan-lang',
     author: {
       name: 'akira-cn',
       url: 'https://github.com/akira-cn',
@@ -52,7 +52,7 @@ export const packages: PackageInfo[] = [
   {
     name: '柯裡化法',
     repo: 'akira-cn/currying-wy',
-    description: 'Currying for Wenyan Lang',
+    description: 'Currying for wenyan-lang',
     author: {
       name: 'akira-cn',
       url: 'https://github.com/akira-cn',
@@ -62,7 +62,7 @@ export const packages: PackageInfo[] = [
   {
     name: '腳本秘術',
     repo: 'akira-cn/script-wy',
-    description: 'Embed scripts into Wenyan Lang',
+    description: 'Embed scripts into wenyan-lang',
     author: {
       name: 'akira-cn',
       url: 'https://github.com/akira-cn',
@@ -72,7 +72,7 @@ export const packages: PackageInfo[] = [
   {
     name: '交互秘術',
     repo: 'GLanguage/jiaohu-wy',
-    description: 'IO for Wenyan Lang',
+    description: 'IO for wenyan-lang',
     author: {
       name: 'GLanguage',
       url: 'https://github.com/GLanguage',
@@ -82,11 +82,14 @@ export const packages: PackageInfo[] = [
   {
     name: '質問',
     repo: 'alainsaas/prompt-wy',
-    description: 'Prompt for Wenyan Lang',
+    description: 'Prompt for wenyan-lang',
     author: {
       name: 'alainsaas',
       url: 'https://github.com/alainsaas',
     },
     aliases: ['prompt'],
+    dependencies: {
+      腳本秘術: '*',
+    },
   },
 ]

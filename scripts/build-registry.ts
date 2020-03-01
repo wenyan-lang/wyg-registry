@@ -25,6 +25,7 @@ export function BuildIndex (writeToFile = true) {
       description: pkg.description,
       entry: `${getRepoRawRoot(pkg.repo)}/序.wy`,
       author: typeof pkg.author === 'string' ? pkg.author : pkg.author?.name,
+      dependencies: pkg.dependencies,
     }
 
     if ((pkg.aliases || []).length > 5)
