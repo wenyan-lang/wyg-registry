@@ -27,6 +27,8 @@ You can also check out [`子曰<antfu/ziyue-wy>`](https://github.com/antfu/ziyue
 
 <!--package_list_end-->
 
+> The list above might not be always update to date, you can check out https://wyg.wy-lang.org/ for realtime list.
+
 ## License
 
 [MIT License](https://github.com/wenyan-lang/wyg-registry/blob/master/LICENSE) © 2020 [Anthony Fu](https://github.com/antfu)
