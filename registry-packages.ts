@@ -92,4 +92,17 @@ export const packages: PackageInfo[] = [
       腳本秘術: '*',
     },
   },
+  {
+    name: '解析整數',
+    repo: 'alainsaas/zh_parseint-wy',
+    description: 'parseInt equivalent for wenyan-lang, working with both Chinese and European numerals',
+    author: {
+      name: 'alainsaas',
+      url: 'https://github.com/alainsaas',
+    },
+    aliases: ['zh_parseint'],
+    dependencies: {
+      腳本秘術: '*',
+    },
+  },
 ]
