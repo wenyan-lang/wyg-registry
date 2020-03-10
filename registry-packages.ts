@@ -105,4 +105,14 @@ export const packages: PackageInfo[] = [
       腳本秘術: '*',
     },
   },
+  {
+    name: '符經',
+    repo: 'GLanguage/fujing-wy',
+    description: 'Escape special characters in wenyan string',
+    author: {
+      name: 'GLanguage',
+      url: 'https://github.com/GLanguage',
+    },
+    aliases: ['fujing'],
+  },
 ]
