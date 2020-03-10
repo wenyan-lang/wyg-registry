@@ -23,6 +23,7 @@ You can also check out [`子曰<antfu/ziyue-wy>`](https://github.com/antfu/ziyue
 - [柯裡化法](https://github.com/akira-cn/currying-wy/tree/master) - Currying for wenyan-lang - by [akira-cn](https://github.com/akira-cn)
 - [简体秘术](https://github.com/lymslive/wyg-packages/tree/jiantihua) - Use simplified Chinese keywords and punctuation for wenyan-lang - by [lymslive](https://github.com/lymslive/wyg-packages)
 - [腳本秘術](https://github.com/akira-cn/script-wy/tree/master) - Embed scripts into wenyan-lang - by [akira-cn](https://github.com/akira-cn)
+- [解析整數](https://github.com/alainsaas/zh_parseint-wy/tree/master) - parseInt equivalent for wenyan-lang, working with both Chinese and European numerals - by [alainsaas](https://github.com/alainsaas)
 - [質問](https://github.com/alainsaas/prompt-wy/tree/master) - Prompt for wenyan-lang - by [alainsaas](https://github.com/alainsaas)
 - [符經](https://github.com/GLanguage/fujing-wy/tree/master) - Escape special characters in wenyan string - by [GLanguage](https://github.com/GLanguage)
 
