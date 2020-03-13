@@ -121,7 +121,7 @@ export const packages: PackageInfo[] = [
     description: 'Do continuous addition and mutiplication easily.',
     author: {
       name: 'XingZiLong',
-      url: 'httos://github.com/XingZiLong',
+      url: 'https://github.com/XingZiLong',
     },
     aliases: ['continuous-operation'],
   },
