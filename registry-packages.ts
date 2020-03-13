@@ -124,5 +124,8 @@ export const packages: PackageInfo[] = [
       url: 'https://github.com/XingZiLong',
     },
     aliases: ['continuous-operation'],
+    dependencies: {
+      腳本秘術: '*',
+    },
   },
 ]
