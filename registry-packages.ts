@@ -93,6 +93,7 @@ export const packages: PackageInfo[] = [
       url: 'https://github.com/GLanguage',
     },
     aliases: ['jiaohu'],
+    examples: ['範例/例一'],
   },
   {
     name: '質問',
@@ -129,6 +130,7 @@ export const packages: PackageInfo[] = [
       url: 'https://github.com/GLanguage',
     },
     aliases: ['fujing'],
+    examples: ['範例/例一'],
   },
   {
     name: '連加連乘',
