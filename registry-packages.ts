@@ -5,7 +5,7 @@ import { PackageInfo } from './scripts/types'
   Please append your package infomation to the following array
   and then make a PR for your changes.
 
-  The `name` should be in Chinese, you can add pinyin aliases to your packages
+  The `name` should be in Chinese, you can add pinyin or English `aliases` to your packages
 
   For the `repo` field, you can set by following format:
     GitHub - `owner/name` or `github:owner/name`
@@ -14,9 +14,13 @@ import { PackageInfo } from './scripts/types'
 
   If you would like specify the branch
     `owner/name#my-branch`
+    
+  If your packages have dependencies to other packages, you well need to set `dependencies`
+    dependencies: {
+      腳本秘術: '*',
+    },
+  Package versioning system is not implemented yet, please leave the value to '*' for now.
 */
-
-// No version control yet
 
 export const packages: PackageInfo[] = [
   {
