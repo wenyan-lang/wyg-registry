@@ -115,4 +115,14 @@ export const packages: PackageInfo[] = [
     },
     aliases: ['fujing'],
   },
+  {
+    name: '連加連乘',
+    repo: 'XingZiLong/continuous-operation',
+    description: 'Do continuous addition and mutiplication easily.',
+    author: {
+      name: 'XingZiLong',
+      url: 'https://github.com/XingZiLong',
+    },
+    aliases: ['continuous-operation'],
+  },
 ]
