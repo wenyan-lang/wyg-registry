@@ -5,6 +5,7 @@ export interface RegistryIndex {
     description?: string
     author?: string
     dependencies?: DependenciesDefine
+    examples?: string[]
   }>
   alias: Record<string, string>
 }
@@ -23,4 +24,5 @@ export interface PackageInfo {
   author?: AuthorInfo
   description?: string
   dependencies?: DependenciesDefine
+  examples?: string[]
 }

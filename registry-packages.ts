@@ -5,21 +5,31 @@ import { PackageInfo } from './scripts/types'
   Please append your package infomation to the following array
   and then make a PR for your changes.
 
-  The `name` should be in Chinese, you can add pinyin or English `aliases` to your packages
+  Name:
+    The `name` should be in Chinese, you can add pinyin or English `aliases` to your packages
 
-  For the `repo` field, you can set by following format:
-    GitHub - `owner/name` or `github:owner/name`
-    GitLab - `gitlab:owner/name`
-    Bitbucket - `bitbucket:owner/name`
+  REPO:
+    For the `repo` field, you can set by following format:
+      GitHub - `owner/name` or `github:owner/name`
+      GitLab - `gitlab:owner/name`
+      Bitbucket - `bitbucket:owner/name`
 
-  If you would like specify the branch
-    `owner/name#my-branch`
-    
-  If your packages have dependencies to other packages, you well need to set `dependencies`
-    dependencies: {
-      腳本秘術: '*',
-    },
-  Package versioning system is not implemented yet, please leave the value to '*' for now.
+    If you would like specify the branch
+      `owner/name#my-branch`
+
+  EXAMPLES:
+    You can provide `examples` to your packages, it can be viewed by the Online IDE and wyg homepage.
+      examples: ['例一', '範例/三人行'],
+
+    This will refer to `例一.wy` and `範例/三人行.wy` from the root for your repo.
+
+  DEPENDENCIES:
+    If your packages have dependencies to other packages, you well need to set `dependencies`
+      dependencies: {
+        腳本秘術: '*',
+      },
+
+    Package versioning system is not implemented yet, please leave the value to '*' for now.
 */
 
 export const packages: PackageInfo[] = [
@@ -32,6 +42,7 @@ export const packages: PackageInfo[] = [
       url: 'https://github.com/antfu',
     },
     aliases: ['ziyue'],
+    examples: ['例一'],
   },
   {
     name: '简体秘术',
