@@ -123,6 +123,6 @@ export const packages: PackageInfo[] = [
       name: 'XingZiLong',
       url: 'httos://github.com/XingZiLong',
     },
-    aliases: ['XingZiLong'],
+    aliases: ['continuous-operation'],
   },
 ]
