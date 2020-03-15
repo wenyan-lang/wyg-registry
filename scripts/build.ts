@@ -112,7 +112,7 @@ export async function BuildRedirects () {
   fs.writeFileSync(path.join(distDir, '_redirects'), `${text}\n`, 'utf-8')
 }
 
-export function BuildRegistryIndex () {
+export function BuildRegistryHomepage () {
   let md = fs.readFileSync(path.resolve(__dirname, 'index-templates', 'index.md'), 'utf-8')
   md = md.replace('<!--PACKAGES-->', BuildReadme(false))
   let html = fs.readFileSync(path.resolve(__dirname, 'index-templates', 'index.html'), 'utf-8')
@@ -120,11 +120,4 @@ export function BuildRegistryIndex () {
 
   fs.writeFileSync(path.join(distDir, 'index.html'), html)
   fs.copyFileSync(path.resolve(__dirname, 'index-templates', '404.html'), path.join(distDir, '404.html'))
-}
-
-if (require.main === module) {
-  BuildIndex()
-  BuildReadme()
-  BuildRedirects()
-  BuildRegistryIndex()
 }

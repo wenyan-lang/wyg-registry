@@ -21,13 +21,13 @@ jobs:
       run: npm ci
     
     - name: Build
-      run: npm run build
+      run: npm run build:readme
 
     - name: Commit files
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git commit -m "Update docs" -a || echo "Nothing to update"
+        git config --local user.email "bot@wy-lang.org"
+        git config --local user.name "Wenyan Bot"
+        git commit -m "docs: update readme" -a || echo "Nothing to update"
 
     - name: Push changes
       uses: ad-m/github-push-action@master

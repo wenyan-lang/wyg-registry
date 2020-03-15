@@ -8,11 +8,11 @@ Packages registry for [wyg](https://github.com/wenyan-lang/wyg)
 - Commit your code and make sure `序.wy`(as entry) in the root.
 - Clone this repo and modify the [`registry-packages.ts`](https://github.com/wenyan-lang/wyg-registry/blob/master/registry-packages.ts) and add your package info. The details is included in the file as comments.
 - Create a PR of your changes.
-- Once the PR got merged, your package will published automatically!
+- Once the PR got merged, your package will publish automatically!
 
 You can also check out [`子曰<antfu/ziyue-wy>`](https://github.com/antfu/ziyue-wy) as an example.
 
-## Avaliable Packages
+## Available Packages
 
 <!--GENERATED_DO_NOT_MODIFY-->
 <!--package_list_start-->
@@ -30,8 +30,6 @@ You can also check out [`子曰<antfu/ziyue-wy>`](https://github.com/antfu/ziyue
 - [連加連乘](https://github.com/XingZiLong/continuous-operation/tree/master) - Do continuous addition and mutiplication easily. - by [XingZiLong](https://github.com/XingZiLong)
 
 <!--package_list_end-->
-
-> The list above might not be updated to date, you can check out https://wyg.wy-lang.org/ for realtime one.
 
 ## License
 

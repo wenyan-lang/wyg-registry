@@ -2,7 +2,9 @@
   "name": "@wenyanlang/wyg-registry",
   "private": true,
   "scripts": {
-    "build": "ts-node ./scripts/build-registry.ts",
+    "build": "ts-node ./scripts/build-all.ts",
+    "build:homepage": "ts-node ./scripts/build-homepage.ts",
+    "build:readme": "ts-node ./scripts/build-readme.ts",
     "verify": "ts-node ./scripts/verify",
     "lint": "eslint **/*.ts",
     "lint:fix": "npm run lint -- --fix"

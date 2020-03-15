@@ -2,7 +2,7 @@ import consola from 'consola'
 import { getRepoRawRoot } from '@wenyanlang/wyg'
 import axios, { AxiosError } from 'axios'
 import { packages } from '../registry-packages'
-import { BuildIndex } from './build-registry'
+import { BuildIndex } from './build'
 
 async function Verify () {
   consola.info('Checking for conflicts...')
