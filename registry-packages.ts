@@ -104,6 +104,7 @@ export const packages: PackageInfo[] = [
       url: 'https://github.com/alainsaas',
     },
     aliases: ['prompt'],
+    examples: ['例_zh_sqrt_input'],
     dependencies: {
       腳本秘術: '*',
     },
