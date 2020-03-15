@@ -17,17 +17,19 @@ You can also check out [`子曰<antfu/ziyue-wy>`](https://github.com/antfu/ziyue
 <!--GENERATED_DO_NOT_MODIFY-->
 <!--package_list_start-->
 
-- [交互秘術](https://github.com/GLanguage/jiaohu-wy/tree/master) - IO for wenyan-lang - by [GLanguage](https://github.com/GLanguage)
-- [刻漏](https://github.com/akira-cn/kelou-wy/tree/master) - JavaScript timers for wenyan-lang - by [akira-cn](https://github.com/akira-cn)
-- [子曰](https://github.com/antfu/ziyue-wy/tree/master) - Cowsay for wenyan-lang - by [antfu](https://github.com/antfu)
-- [柯裡化法](https://github.com/akira-cn/currying-wy/tree/master) - Currying for wenyan-lang - by [akira-cn](https://github.com/akira-cn)
-- [物之類](https://github.com/XingZiLong/typeof/tree/master) - Return and compare the type of objects - by [XingZiLong](https://github.com/XingZiLong)
-- [符經](https://github.com/GLanguage/fujing-wy/tree/master) - Escape special characters in wenyan string - by [GLanguage](https://github.com/GLanguage)
-- [简体秘术](https://github.com/lymslive/wyg-packages/tree/jiantihua) - Use simplified Chinese keywords and punctuation for wenyan-lang - by [lymslive](https://github.com/lymslive/wyg-packages)
-- [腳本秘術](https://github.com/akira-cn/script-wy/tree/master) - Embed scripts into wenyan-lang - by [akira-cn](https://github.com/akira-cn)
-- [解析整數](https://github.com/alainsaas/zh_parseint-wy/tree/master) - parseInt equivalent for wenyan-lang, working with both Chinese and European numerals - by [alainsaas](https://github.com/alainsaas)
-- [質問](https://github.com/alainsaas/prompt-wy/tree/master) - Prompt for wenyan-lang - by [alainsaas](https://github.com/alainsaas)
-- [連加連乘](https://github.com/XingZiLong/continuous-operation/tree/master) - Do continuous addition and mutiplication easily. - by [XingZiLong](https://github.com/XingZiLong)
+| Name | Description | Author |
+|---|---|---|
+|[交互秘術](https://github.com/GLanguage/jiaohu-wy/tree/master)|IO for wenyan-lang|[GLanguage](https://github.com/GLanguage)|
+|[刻漏](https://github.com/akira-cn/kelou-wy/tree/master)|JavaScript timers for wenyan-lang|[akira-cn](https://github.com/akira-cn)|
+|[子曰](https://github.com/antfu/ziyue-wy/tree/master)|Cowsay for wenyan-lang|[antfu](https://github.com/antfu)|
+|[柯裡化法](https://github.com/akira-cn/currying-wy/tree/master)|Currying for wenyan-lang|[akira-cn](https://github.com/akira-cn)|
+|[物之類](https://github.com/XingZiLong/typeof/tree/master)|Return and compare the type of objects|[XingZiLong](https://github.com/XingZiLong)|
+|[符經](https://github.com/GLanguage/fujing-wy/tree/master)|Escape special characters in wenyan string|[GLanguage](https://github.com/GLanguage)|
+|[简体秘术](https://github.com/lymslive/wyg-packages/tree/jiantihua)|Use simplified Chinese keywords and punctuation for wenyan-lang|[lymslive](https://github.com/lymslive/wyg-packages)|
+|[腳本秘術](https://github.com/akira-cn/script-wy/tree/master)|Embed scripts into wenyan-lang|[akira-cn](https://github.com/akira-cn)|
+|[解析整數](https://github.com/alainsaas/zh_parseint-wy/tree/master)|parseInt equivalent for wenyan-lang, working with both Chinese and European numerals|[alainsaas](https://github.com/alainsaas)|
+|[質問](https://github.com/alainsaas/prompt-wy/tree/master)|Prompt for wenyan-lang|[alainsaas](https://github.com/alainsaas)|
+|[連加連乘](https://github.com/XingZiLong/continuous-operation/tree/master)|Do continuous addition and mutiplication easily.|[XingZiLong](https://github.com/XingZiLong)|
 
 <!--package_list_end-->
 
