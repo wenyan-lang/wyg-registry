@@ -58,20 +58,17 @@ export function getAuthorMarkdown (author: AuthorInfo) {
 }
 
 export function BuildReadme (writeToFile = true) {
-  let readme = '\n\n'
+  let readme = '\n\n| Name | Description | Author |\n|---|---|---|\n'
 
   packages.sort((a, b) => a.name.localeCompare(b.name, 'zh-TW'))
 
   for (const pkg of packages) {
-    let list = `- [${pkg.name}](${getRepoRoot(pkg.repo)})`
+    const list = [`[${pkg.name}](${getRepoRoot(pkg.repo)})`]
 
-    if (pkg.description)
-      list += ` - ${pkg.description}`
+    list.push(pkg.description ? `${pkg.description}` : '')
+    list.push(pkg.author ? `${getAuthorMarkdown(pkg.author)}` : '')
 
-    if (pkg.author)
-      list += ` - by ${getAuthorMarkdown(pkg.author)}`
-
-    readme += `${list}\n`
+    readme += `|${list.join('|')}|\n`
   }
 
   readme += '\n'
