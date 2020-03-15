@@ -156,4 +156,3 @@ export const packages: PackageInfo[] = [
     aliases: ['typeof'],
   },
 ]
-    
