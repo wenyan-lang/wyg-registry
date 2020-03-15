@@ -145,4 +145,15 @@ export const packages: PackageInfo[] = [
       腳本秘術: '*',
     },
   },
+  {
+    name:'物之類',
+    repo: 'XingZiLong/typeof',
+    description: 'Return and compare the type of objects',
+    author: {
+      name: 'XingZiLong',
+      url: 'https://github.com/XingZiLong',
+    },
+    aliases: ['typeof'],
+  },
 ]
+    
