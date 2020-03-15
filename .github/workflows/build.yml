@@ -1,0 +1,37 @@
+name: Test
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Install
+      run: npm ci
+    
+    - name: Build
+      run: npm run build
+
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Update docs" -a || echo "Nothing to update"
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+
+  
