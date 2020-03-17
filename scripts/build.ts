@@ -8,6 +8,10 @@ import { RegistryIndex, AuthorInfo } from './types'
 
 const distDir = path.resolve(__dirname, '..', 'dist')
 
+const MAX_ALIAS_LENGTH = 20
+const MAX_NAME_LENGTH = 12
+const MAX_DESC_LENGTH = 120
+
 export function BuildIndex (writeToFile = true) {
   const index: RegistryIndex = {
     packages: {},
@@ -15,10 +19,18 @@ export function BuildIndex (writeToFile = true) {
   }
 
   for (const pkg of packages) {
+    if (!pkg.repo)
+      throw new Error(`Repo field of package "${pkg.name}" is not provided`)
+    if (pkg.name.length > MAX_NAME_LENGTH)
+      throw new Error(`Package name "${pkg.name}" exceed max length ${MAX_NAME_LENGTH}`)
+    if (pkg.name.match(/\s/g))
+      throw new Error(`Package name "${pkg.name}" contains whitespaces`)
     if (index.packages[pkg.name])
-      throw new Error(`Package name ${pkg.name} already exists`)
+      throw new Error(`Package name "${pkg.name}" already exists`)
     if (index.alias[pkg.name])
-      throw new Error(`Package name ${pkg.name} conflicted with existing aliases`)
+      throw new Error(`Package name "${pkg.name}" conflicted with existing aliases`)
+    if ((pkg.description?.length || 0) > MAX_DESC_LENGTH)
+      throw new Error(`Description of package "${pkg.name}" exceed max length ${MAX_DESC_LENGTH}.\n"${pkg.description}"`)
 
     index.packages[pkg.name] = {
       repo: pkg.repo,
@@ -33,10 +45,16 @@ export function BuildIndex (writeToFile = true) {
       throw new Error('Up to 5 aliases is allowed for a package')
 
     for (const alias of pkg.aliases || []) {
+      if (alias.length > MAX_ALIAS_LENGTH)
+        throw new Error(`Alias "${alias}" exceed max length ${MAX_ALIAS_LENGTH}`)
+      if (alias.match(/\s/g))
+        throw new Error(`Alias "${alias}" contains whitespaces`)
+      if (alias !== alias.toLowerCase())
+        throw new Error(`Alias "${alias}" should be lower cases`)
       if (index.alias[alias])
-        throw new Error(`Alias ${alias} already exists`)
+        throw new Error(`Alias "${alias}" already exists`)
       if (index.packages[alias])
-        throw new Error(`Alias ${alias} conflicted with existing package names`)
+        throw new Error(`Alias "${alias}" conflicted with existing package names`)
 
       index.alias[alias] = pkg.name
     }
