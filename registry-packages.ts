@@ -147,7 +147,7 @@ export const packages: PackageInfo[] = [
     },
   },
   {
-    name:'物之類',
+    name: '物之類',
     repo: 'XingZiLong/typeof',
     description: 'Return and compare the type of objects',
     author: {
