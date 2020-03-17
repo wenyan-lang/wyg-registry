@@ -6,7 +6,7 @@ Packages registry for [wyg](https://github.com/wenyan-lang/wyg)
 
 - Create a git repo on Github/Gitlab/Bitbucket
 - Commit your code and make sure `序.wy`(as entry) in the root.
-- Clone this repo and modify the [`registry-packages.ts`](https://github.com/wenyan-lang/wyg-registry/blob/master/registry-packages.ts) and add your package info. The details is included in the file as comments.
+- Clone this repo and modify the [`registry.yml`](https://github.com/wenyan-lang/wyg-registry/blob/master/registry.yml) and add your package info. The details is included in the file as comments.
 - Create a PR of your changes.
 - Once the PR got merged, your package will publish automatically!
 

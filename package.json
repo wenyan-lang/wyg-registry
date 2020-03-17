@@ -33,9 +33,10 @@
   "devDependencies": {
     "@antfu/eslint-config-ts": "^0.2.10",
     "@types/fs-extra": "^8.0.1",
+    "@types/js-yaml": "^3.12.2",
     "@types/json-stable-stringify": "^1.0.32",
-    "@types/node": "^13.1.6",
     "@types/markdown-it": "0.0.9",
+    "@types/node": "^13.1.6",
     "@wenyanlang/wyg": "0.0.5",
     "commander": "^4.1.0",
     "consola": "^2.11.3",
@@ -43,10 +44,11 @@
     "eslint-plugin-jest": "^23.3.0",
     "fs-extra": "^8.1.0",
     "husky": "4.0.5",
+    "js-yaml": "^3.13.1",
     "json-stable-stringify": "^1.0.1",
     "lint-staged": "9.5.0",
-    "ts-node": "^8.6.0",
     "markdown-it": "^10.0.0",
+    "ts-node": "^8.6.0",
     "typescript": "^3.7.4"
   }
 }

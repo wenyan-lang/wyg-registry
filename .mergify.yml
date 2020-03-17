@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: Automatic merge for publishing packages
+    conditions:
+      - "status-success=Verify"
+      - files=registry.yml
+      - "#files=1"
+    actions:
+      merge:
+        method: merge
