@@ -29,8 +29,8 @@ You can also check out [`子曰<antfu/ziyue-wy>`](https://github.com/antfu/ziyue
 |[腳本秘術](https://github.com/akira-cn/script-wy/tree/master)|`script`|Embed scripts into wenyan-lang|[akira-cn](https://github.com/akira-cn)|
 |[解析整數](https://github.com/alainsaas/zh_parseint-wy/tree/master)|`zh_parseint`|parseInt equivalent for wenyan-lang, working with both Chinese and European numerals|[alainsaas](https://github.com/alainsaas)|
 |[質問](https://github.com/alainsaas/prompt-wy/tree/master)|`prompt`|Prompt for wenyan-lang|[alainsaas](https://github.com/alainsaas)|
+|[造類秘術](https://github.com/GLanguage/class-wy/tree/master)|`class` `zaolei`|CLASS LITERALS for wenyan-lang|[GLanguage](https://github.com/GLanguage)|
 |[連加連乘](https://github.com/XingZiLong/continuous-operation/tree/master)|`continuous-operation`|Do continuous addition and mutiplication easily.|[XingZiLong](https://github.com/XingZiLong)|
-|[造類秘術](https://github.com/GLanguage/class-wy/tree/master)|`class`, `zaolei`|CLASS LITERALS for wenyan lang|[GLanguage](https://github.com/GLanguage)|
 
 <!--package_list_end-->
 
