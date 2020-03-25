@@ -145,3 +145,15 @@
     url: 'https://github.com/XingZiLong'
   aliases:
     - typeof
+
+- name: 造類秘術
+  repo: GLanguage/class-wy
+  description: CLASS LITERALS for wenyan-lang
+  author: 
+    name: GLanguage
+    url: 'https://github.com/GLanguage'
+  aliases:
+    - class
+    - zaolei
+  examples:
+    - 範例/例一
