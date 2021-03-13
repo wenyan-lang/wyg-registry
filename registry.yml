@@ -157,3 +157,16 @@
     - zaolei
   examples:
     - 範例/例一
+    
+- name: 简化方言
+  repo: XiLaiTL/simplified-dialect-wy
+  description: A dialect of wenyan-lang to simplify some grammar
+  author:
+    name: XiLaiTL
+    url: 'https://github.com/XiLaiTL'
+  aliases:
+    - simplified-dialect
+  examples:
+    - 例一
+  dependencies:
+    简体秘术: '*'
