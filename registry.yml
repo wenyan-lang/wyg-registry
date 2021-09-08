@@ -170,3 +170,12 @@
     - 例一
   dependencies:
     简体秘术: '*'
+
+- name: 器經
+  repo: NFLSCode/qijing
+  description: Data structures for wenyan-lang.
+  author:
+    name: NFLSCode
+    url: 'https://github.com/NFLSCode'
+  aliases:
+    - qijing
