@@ -181,10 +181,12 @@
     - qijing
 
 - name: 干支
-  repo: GAMESKY-tech/ganzhi-wy
+  repo: GAMESKY-tech/ganzhi-wy#main
   description: Convert A.D to branches.
   author:
     name: GAMESKY-tech
     url: 'https://github.com/GAMESKY-tech'
   aliases:
     - ganzhi
+  examples:
+    - 例一
