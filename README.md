@@ -20,6 +20,7 @@ You can also check out [`子曰<antfu/ziyue-wy>`](https://github.com/antfu/ziyue
 | Name | Alias | Description | Author |
 |---|---|---|---|
 |[子曰](https://github.com/antfu/ziyue-wy/tree/master)|`ziyue`|Cowsay for wenyan-lang|[antfu](https://github.com/antfu)|
+|[干支](https://github.com/GAMESKY-tech/ganzhi-wy/tree/main)|`ganzhi`|Convert A.D to branches.|[GAMESKY-tech](https://github.com/GAMESKY-tech)|
 |[交互秘術](https://github.com/GLanguage/jiaohu-wy/tree/master)|`jiaohu`|IO for wenyan-lang|[GLanguage](https://github.com/GLanguage)|
 |[刻漏](https://github.com/akira-cn/kelou-wy/tree/master)|`kelou`|JavaScript timers for wenyan-lang|[akira-cn](https://github.com/akira-cn)|
 |[物之類](https://github.com/XingZiLong/typeof/tree/master)|`typeof`|Return and compare the type of objects|[XingZiLong](https://github.com/XingZiLong)|
