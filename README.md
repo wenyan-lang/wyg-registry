@@ -23,11 +23,9 @@ You can also check out [`子曰<antfu/ziyue-wy>`](https://github.com/antfu/ziyue
 |[干支](https://github.com/GAMESKY-tech/ganzhi-wy/tree/main)|`ganzhi`|Convert A.D to branches.|[GAMESKY-tech](https://github.com/GAMESKY-tech)|
 |[交互秘術](https://github.com/GLanguage/jiaohu-wy/tree/master)|`jiaohu`|IO for wenyan-lang|[GLanguage](https://github.com/GLanguage)|
 |[刻漏](https://github.com/akira-cn/kelou-wy/tree/master)|`kelou`|JavaScript timers for wenyan-lang|[akira-cn](https://github.com/akira-cn)|
-|[物之類](https://github.com/XingZiLong/typeof/tree/master)|`typeof`|Return and compare the type of objects|[XingZiLong](https://github.com/XingZiLong)|
 |[柯裡化法](https://github.com/akira-cn/currying-wy/tree/master)|`currying`|Currying for wenyan-lang|[akira-cn](https://github.com/akira-cn)|
 |[符經](https://github.com/GLanguage/fujing-wy/tree/master)|`fujing`|Escape special characters in wenyan string|[GLanguage](https://github.com/GLanguage)|
 |[造類秘術](https://github.com/GLanguage/class-wy/tree/master)|`class` `zaolei`|CLASS LITERALS for wenyan-lang|[GLanguage](https://github.com/GLanguage)|
-|[連加連乘](https://github.com/XingZiLong/continuous-operation/tree/master)|`continuous-operation`|Do continuous addition and mutiplication easily.|[XingZiLong](https://github.com/XingZiLong)|
 |[简化方言](https://github.com/XiLaiTL/simplified-dialect-wy/tree/master)|`simplified-dialect`|A dialect of wenyan-lang to simplify some grammar|[XiLaiTL](https://github.com/XiLaiTL)|
 |[简体秘术](https://github.com/lymslive/wyg-packages/tree/jiantihua)|`jiantihua`|Use simplified Chinese keywords and punctuation for wenyan-lang|[lymslive](https://github.com/lymslive/wyg-packages)|
 |[腳本秘術](https://github.com/akira-cn/script-wy/tree/master)|`script`|Embed scripts into wenyan-lang|[akira-cn](https://github.com/akira-cn)|
