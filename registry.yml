@@ -125,18 +125,7 @@
     - fujing
   examples:
     - 範例/例一
-
-- name: 連加連乘
-  repo: XingZiLong/continuous-operation
-  description: Do continuous addition and mutiplication easily.
-  author:
-    name: XingZiLong
-    url: 'https://github.com/XingZiLong'
-  aliases:
-    - continuous-operation
-  dependencies:
-    腳本秘術: '*'
-
+ 
 - name: 物之類
   repo: XingZiLong/typeof
   description: Return and compare the type of objects
