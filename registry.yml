@@ -126,15 +126,6 @@
   examples:
     - 範例/例一
  
-- name: 物之類
-  repo: XingZiLong/typeof
-  description: Return and compare the type of objects
-  author:
-    name: XingZiLong
-    url: 'https://github.com/XingZiLong'
-  aliases:
-    - typeof
-
 - name: 造類秘術
   repo: GLanguage/class-wy
   description: CLASS LITERALS for wenyan-lang
