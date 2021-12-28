@@ -172,3 +172,14 @@
     - ganzhi
   examples:
     - 例一
+
+- name: 閱文秘術
+  repo: DGCK81LNN/wenyan-stdin
+  description: Read input from stdin.
+  author:
+    name: DGCK81LNN
+    url: 'https://github.com/DGCK81LNN'
+  aliases:
+    - stdin
+  examples:
+    - 例一
