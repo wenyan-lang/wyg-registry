@@ -31,6 +31,7 @@ You can also check out [`子曰<antfu/ziyue-wy>`](https://github.com/antfu/ziyue
 |[腳本秘術](https://github.com/akira-cn/script-wy/tree/master)|`script`|Embed scripts into wenyan-lang|[akira-cn](https://github.com/akira-cn)|
 |[解析整數](https://github.com/alainsaas/zh_parseint-wy/tree/master)|`zh_parseint`|parseInt equivalent for wenyan-lang, working with both Chinese and European numerals|[alainsaas](https://github.com/alainsaas)|
 |[質問](https://github.com/alainsaas/prompt-wy/tree/master)|`prompt`|Prompt for wenyan-lang|[alainsaas](https://github.com/alainsaas)|
+|[閱文秘術](https://github.com/DGCK81LNN/wenyan-stdin/tree/master)|`stdin`|Read input from stdin.|[DGCK81LNN](https://github.com/DGCK81LNN)|
 |[器經](https://github.com/NFLSCode/qijing/tree/master)|`qijing`|Data structures for wenyan-lang.|[NFLSCode](https://github.com/NFLSCode)|
 
 <!--package_list_end-->
