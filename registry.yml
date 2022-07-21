@@ -183,3 +183,28 @@
     - stdin
   examples:
     - 例一
+
+- name: 異步秘術
+  repo: akira-cn/async-wy
+  description: async functions for wenyan-lang.
+  author:
+    name: akira-cn
+    url: 'https://github.com/akira-cn'
+  aliases:
+    - async-wy
+  examples:
+    - 例一
+    
+- name: 控制秘術
+  repo: akira-cn/control-wy
+  description: Listen pointer and keyboard events.
+  author:
+    name: akira-cn
+    url: 'https://github.com/akira-cn'
+  aliases:
+    - control-wy
+  examples:
+    - 例一
+  dependencies:
+    腳本秘術: '*'
+    異步秘術: '*'
